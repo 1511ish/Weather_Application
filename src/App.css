@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    background-attachment: fixed;
+    user-select: none;
+}
+
+.weather-app {
+    background-attachment: fixed;
+    color: white;
+    height: 100vh;
+    /* Full viewport height */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+    background: url('./Background/mountains.jpg') no-repeat center center fixed;
+    /* Fixed background */
+    background-size: cover;
+    /* Cover the entire container */
+}
+
+.main_content {
+    border-radius: 15px;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 75% ;
+    margin: auto;
+}
+
+.temp {
+    width: 43%;
+}
+
+.toggle-button {
+    background-color: rgba(14, 202, 7, 0.822);
+    /* background-color: #28a745; */
+}
+
+.toggle-button:hover,
+button:hover {
+    /* background-color: #0056b3; Darker blue for hover */
+    background-color: #1caa3b;
+    /* Darker blue for hover */
+    /* transform: scale(1.05); */
+}
+
+.toggle-button:active,
+button:active {
+    /* background-color: #004085; Even darker blue when button is pressed */
+    background-color: #1e7e34;
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 15px;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    .weather-app {
+        height: 150vh !important;
+    }
+
+}
+
+@media (max-width: 1300px) {
+    .main_content {
+        padding: 0px !important;
+        font-size: 15px !important;
+        width: 100% !important;
+        justify-content: space-around;
+    }
+
+}
+
+@media (max-width: 800px) {
+    .weather-app {
+        height: 165vh;
+        padding: 10px;
+        justify-content: center;
+        background-attachment: fixed;
+    }
+
+    .main_content {
+        flex-direction: column;
+        justify-content: center;
+    }
+}
