@@ -9,15 +9,12 @@
     background-attachment: fixed;
     color: white;
     height: 100vh;
-    /* Full viewport height */
     display: flex;
     justify-content: center;
     flex-direction: column;
     padding: 20px;
-    background: url('./Background/mountains.jpg') no-repeat center center fixed;
-    /* Fixed background */
+    background: url('./Background/scattered-clouds.jpg') no-repeat center center fixed;
     background-size: cover;
-    /* Cover the entire container */
 }
 
 .main_content {
